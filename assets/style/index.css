@@ -69,7 +69,10 @@ button {
     display: flex;
     background-color: var(--app-orange);
     margin-left: 10px;
-    
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .circle {

@@ -4,7 +4,7 @@ import { Shape } from './Shape.js';
 
 const shapeSelect = document.getElementById('shapeSelect');
 const colorSelect = document.getElementById('colorSelect');
-const shapeGrid = document.getElementById('shapeGrid');
+const grid = document.querySelector('.grid');
 const createButton = document.querySelector('button');
 
 createButton.addEventListener('click', createShape);
@@ -31,5 +31,5 @@ function createShape() {
         alert(newShape.getInfo());
     };
 
-    shapeGrid.appendChild(newShapeElement);
+    grid.appendChild(newShapeElement);
 }
